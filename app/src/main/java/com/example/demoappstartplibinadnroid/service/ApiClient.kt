@@ -9,7 +9,7 @@ import retrofit2.create
 import java.io.File
 
 object ApiClient {
-  lateinit var retrofit: Retrofit
+  private lateinit var retrofit: Retrofit
   
   fun initialize(applicationContext: Context, baseUrl: String) {
     // File represents the application cache directory
@@ -30,5 +30,5 @@ object ApiClient {
       .build()
   }
   
-  inline fun <reified T : Any> create(): T = retrofit.create<T>()
+  fun create(): ApiInterface = retrofit.create<ApiInterface>()
 }
