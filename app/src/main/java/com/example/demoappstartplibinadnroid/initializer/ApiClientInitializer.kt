@@ -2,7 +2,7 @@ package com.example.demoappstartplibinadnroid.initializer
 
 import android.content.Context
 import androidx.startup.Initializer
-import com.example.demoappstartplibinadnroid.di.ApiClient
+import com.example.demoappstartplibinadnroid.service.ApiClient
 import timber.log.Timber
 
 class ApiClientInitializer: Initializer<ApiClient> {
