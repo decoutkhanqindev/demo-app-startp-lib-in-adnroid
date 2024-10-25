@@ -1,4 +1,4 @@
-package com.example.demoappstartplibinadnroid.di
+package com.example.demoappstartplibinadnroid.service
 
 import android.content.Context
 import okhttp3.Cache
