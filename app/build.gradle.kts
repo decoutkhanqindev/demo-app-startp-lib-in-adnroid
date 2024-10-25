@@ -46,5 +46,16 @@ dependencies {
   androidTestImplementation(libs.androidx.junit)
   androidTestImplementation(libs.androidx.espresso.core)
   
+  // App Startup
   implementation("androidx.startup:startup-runtime:1.2.0")
+  
+  // Retrofit
+  implementation("com.squareup.retrofit2:retrofit:2.11.0")
+  // Gson
+  implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+  // OkHttp
+  implementation("com.squareup.okhttp3:okhttp:4.11.0")
+  
+  // Timber is easier to use than Log.d
+  implementation("com.jakewharton.timber:timber:5.0.1")
 }
