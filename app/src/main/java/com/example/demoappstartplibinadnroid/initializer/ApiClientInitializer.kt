@@ -7,7 +7,7 @@ import timber.log.Timber
 
 class ApiClientInitializer: Initializer<ApiClient> {
   override fun create(context: Context): ApiClient {
-    ApiClient.initialize(context, "https://example.com/api")
+    ApiClient.initialize(context, "https://example.com/api/")
     Timber.tag("Initializer").d("ApiClient is created.")
     return ApiClient
   }
